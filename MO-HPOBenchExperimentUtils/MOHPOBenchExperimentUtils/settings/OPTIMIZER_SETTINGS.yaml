@@ -1,0 +1,221 @@
+GA_DEFAULT:
+  import_settings:
+    import_from: pymoo_.ga
+    optimizer_name: Pymoo_GA
+
+  eliminate_duplicates: true
+
+  plotting:
+    display_name: GA
+    color:  "#d95f02"  #  orange
+    linestyle: solid
+
+
+NSGA_II_DEFAULT:
+  import_settings:
+    import_from: pymoo_.nsga2
+    optimizer_name: Pymoo_NSGA2
+
+  eliminate_duplicates: true
+
+  plotting:
+    display_name: NSGAII
+    color:  "#d95f02"  #  orange
+    linestyle: solid
+
+RANDOM_SEARCH:
+  test: 0
+
+  plotting:
+    display_name: RS
+    color: '#1b9e77'  # mint
+    linestyle: solid
+
+NSGA_III_DEFAULT:
+  import_settings:
+    import_from: pymoo_.nsga3
+    optimizer_name: Pymoo_NSGA3
+
+  ref_dir_n_partitions: 10
+  pop_size: 100
+  eliminate_duplicates: true
+
+  plotting:
+    display_name: NSGAIII
+    color:  "#d95f02"  #  orange
+    linestyle: solid
+
+MOEA_D_DEFAULT:
+  import_settings:
+    import_from: pymoo_.moea
+    optimizer_name: Pymoo_MOEA_D
+
+  n_neighbors: 20
+  decomposition: 'auto'
+  prob_neighbor_mating: 0.9
+
+  ref_dir_n_partitions: 10
+
+  plotting:
+    display_name: MOEA/D
+    color: "#7570b3"  # purple
+    linestyle: solid
+
+AGE_MOEA_DEFAULT:
+  import_settings:
+    import_from: pymoo_.age_moea
+    optimizer_name: Pymoo_AGE_MOEA
+
+  pop_size: 100
+  eliminate_duplicates: true
+
+  plotting:
+    display_name: AGE-MOEA
+    color: '#e7298a'  # pink
+    linestyle: solid
+
+MO_HB_RANDOM_WEIGHTS:
+  eta: 3
+  n_workers: 1
+  client: null
+
+  mo_strategy_options:
+    algorithm: random_weights
+    num_weights: 100
+
+  plotting:
+    display_name: MO-HB RW
+    color: "#cab2d6"  #  light_purple
+    linestyle: solid
+
+MO_HB_PAREGO:
+  eta: 3
+  n_workers: 1
+  client: null
+
+  mo_strategy_options:
+    algorithm: parego
+    num_weights: 100
+    rho: 0.05
+
+  plotting:
+    display_name: MO-HB PAREGO
+    color: "#66a61e"  # green
+    linestyle: solid
+
+MO_HB_GOLOVIN:
+  eta: 3
+  n_workers: 1
+  client: null
+
+  mo_strategy_options:
+    algorithm: golovin
+    num_weights: 100
+
+  plotting:
+    display_name: MO-HB GOLOVIN
+    color: "#e6ab02"  # yellow
+    linestyle: solid
+
+MO_HB_NSGA-II:
+  eta: 3
+  n_workers: 1
+  client: null
+
+  mo_strategy_options:
+    algorithm: NSGA-II
+
+  plotting:
+    display_name: MO-HB NSGA-II
+    color: "#a6761d" # brown
+    linestyle: solid
+
+MO_HB_EPSNET:
+  eta: 3
+  n_workers: 1
+  client: null
+
+  mo_strategy_options:
+    algorithm: EPSNET
+
+  plotting:
+    display_name: MO-HB EPSNET
+    color: "#e41a1c"  # red
+    linestyle: solid
+
+MO_SMAC_PAREGO:
+  import_settings:
+    import_from: smac.smac
+    optimizer_name: SMACOptimizer
+
+  run_objective: quality
+  run_count_limit: 10000000000000000 # inf
+  deterministic: true
+
+  algorithm_options:
+    smac_facade: SMAC4HPO
+    multi_objective_algorithm: ParEGO
+    multi_objective_kwargs:
+      rho: 0.05
+
+  plotting:
+    display_name: SMAC PAREGO
+    color: "#377eb8"  # blue
+    linestyle: solid
+
+MO_SMAC_GP:
+  import_settings:
+    import_from: smac.smac
+    optimizer_name: SMACOptimizer
+
+  run_objective: quality
+  run_count_limit: 10000000000000000 # inf
+  deterministic: true
+
+  algorithm_options:
+    smac_facade: SMAC4BB
+
+  plotting:
+    display_name: SMAC GP
+    color: "#999999"  # grey
+    linestyle: solid
+
+MO_BANANAS:
+  import_settings:
+    import_from: mobananas.optimizer
+    optimizer_name: MOBananasOptimizer
+
+  neural_predictor_settings:
+    num_epochs: 80
+    num_ensemble_nets: 5
+
+  algorithm_settings:
+    initial_samples: 20
+    num_arch: 8
+    select_models: 4
+
+  plotting:
+    display_name: MO BANANAS
+    color: "#a6cee3" # light blue
+    linestyle: solid
+
+
+MOSH_BANANAS:
+  import_settings:
+    import_from: mobananas.optimizer
+    optimizer_name: MOSHBananasOptimizer
+
+  neural_predictor_settings:
+    num_epochs: 80
+    num_ensemble_nets: 5
+
+  algorithm_settings:
+    initial_samples: 42
+    num_arch: 21
+    select_models: 9
+    eta: 3
+
+  plotting:
+    display_name: MOSH BANANAS
+    color: "#fdbf6f" # light brown
+    linestyle: solid

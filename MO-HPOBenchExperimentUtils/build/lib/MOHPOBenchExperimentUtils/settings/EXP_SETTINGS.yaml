@@ -1,0 +1,646 @@
+fairmohpo_rf:
+  import:
+    import_from: mo.fairmohpo_benchmark
+    benchmark_name: FairMOHPOBenchmark
+    use_local: true
+  metrics:
+    target:
+    - name: val_f1
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: val_f1
+      lower_is_better: true
+    - name: val_ddsp
+      lower_is_better: true
+    - name: val_deod
+      lower_is_better: true
+    - name: val_deop
+      lower_is_better: true
+    - name: val_invd
+      lower_is_better: true
+    - name: test_f1
+      lower_is_better: true
+    - name: test_ddsp
+      lower_is_better: true
+    - name: test_deod
+      lower_is_better: true
+    - name: test_deop
+      lower_is_better: true
+    - name: test_invd
+      lower_is_better: true
+  fidelity:
+    - name: budget
+      limits: [1, 1]
+  benchmark_parameters: {'model_name': 'rf'}
+  optimization:
+    wallclock_limit_in_s: 345600
+    estimated_cost_limit_in_s: null
+    is_surrogate: false
+
+fairmohpo_nn:
+  import:
+    import_from: mo.fairmohpo_benchmark
+    benchmark_name: FairMOHPOBenchmark
+    use_local: true
+  metrics:
+    target:
+    - name: val_f1
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: val_f1
+      lower_is_better: true
+    - name: val_ddsp
+      lower_is_better: true
+    - name: val_deod
+      lower_is_better: true
+    - name: val_deop
+      lower_is_better: true
+    - name: val_invd
+      lower_is_better: true
+    - name: test_f1
+      lower_is_better: true
+    - name: test_ddsp
+      lower_is_better: true
+    - name: test_deod
+      lower_is_better: true
+    - name: test_deop
+      lower_is_better: true
+    - name: test_invd
+      lower_is_better: true
+  fidelity:
+    - name: budget
+      limits: [1, 1]
+  benchmark_parameters: {'model_name': 'nn'}
+  optimization:
+    wallclock_limit_in_s: 345600
+    estimated_cost_limit_in_s: null
+    is_surrogate: false
+
+fairmohpo_xgb:
+  import:
+    import_from: mo.fairmohpo_benchmark
+    benchmark_name: FairMOHPOBenchmark
+    use_local: true
+  metrics:
+    target:
+    - name: val_f1
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: val_f1
+      lower_is_better: true
+    - name: val_ddsp
+      lower_is_better: true
+    - name: val_deod
+      lower_is_better: true
+    - name: val_deop
+      lower_is_better: true
+    - name: val_invd
+      lower_is_better: true
+    - name: test_f1
+      lower_is_better: true
+    - name: test_ddsp
+      lower_is_better: true
+    - name: test_deod
+      lower_is_better: true
+    - name: test_deop
+      lower_is_better: true
+    - name: test_invd
+      lower_is_better: true
+  fidelity:
+    - name: budget
+      limits: [1, 1]
+  benchmark_parameters: {'model_name': 'xgb'}
+  optimization:
+    wallclock_limit_in_s: 345600
+    estimated_cost_limit_in_s: null
+    is_surrogate: false
+
+fairmohpo_svm:
+  import:
+    import_from: mo.fairmohpo_benchmark
+    benchmark_name: FairMOHPOBenchmark
+    use_local: true
+  metrics:
+    target:
+    - name: val_f1
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: val_f1
+      lower_is_better: true
+    - name: val_ddsp
+      lower_is_better: true
+    - name: val_deod
+      lower_is_better: true
+    - name: val_deop
+      lower_is_better: true
+    - name: val_invd
+      lower_is_better: true
+    - name: test_f1
+      lower_is_better: true
+    - name: test_ddsp
+      lower_is_better: true
+    - name: test_deod
+      lower_is_better: true
+    - name: test_deop
+      lower_is_better: true
+    - name: test_invd
+      lower_is_better: true
+  fidelity:
+    - name: budget
+      limits: [1, 1]
+  benchmark_parameters: {'model_name': 'svm'}
+  optimization:
+    wallclock_limit_in_s: 345600
+    estimated_cost_limit_in_s: null
+    is_surrogate: false
+
+mo_adult:
+  import:
+    import_from: mo.adult_benchmark
+    benchmark_name: AdultBenchmark
+    use_local: true
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: DSO
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: train_accuracy
+      lower_is_better: false
+    - name: training_cost
+      lower_is_better: true
+    - name: eval_train_cost
+      lower_is_better: true
+    - name: valid_accuracy
+      lower_is_better: false
+    - name: eval_valid_cost
+      lower_is_better: true
+    - name: test_accuracy
+      lower_is_better: false
+    - name: eval_test_cost
+      lower_is_better: true
+
+    - name: train_DSO
+      lower_is_better: true
+    - name: train_DEO
+      lower_is_better: true
+    - name: train_DFP
+      lower_is_better: true
+    - name: valid_DSO
+      lower_is_better: true
+    - name: valid_DEO
+      lower_is_better: true
+    - name: valid_DFP
+      lower_is_better: true
+    - name: test_DSO
+      lower_is_better: true
+    - name: test_DEO
+      lower_is_better: true
+    - name: test_DFP
+      lower_is_better: true
+
+    - name: total_cost
+      lower_is_better: true
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [1, 200]
+  benchmark_parameters: {}
+  optimization:
+    wallclock_limit_in_s: 86400
+    estimated_cost_limit_in_s: null
+    is_surrogate: false
+
+
+mo_cnn_flower:
+  import:
+    import_from: mo.cnn_benchmark
+    benchmark_name: FlowerCNNBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: negative_accuracy
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: log_model_size
+      threshold: 8.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: train_accuracy
+      lower_is_better: false
+    - name: training_cost
+      lower_is_better: true
+    - name: valid_accuracy
+      lower_is_better: false
+    - name: valid_cost
+      lower_is_better: true
+    - name: test_accuracy
+      lower_is_better: false
+    - name: test_cost
+      lower_is_better: true
+    - name: total_time
+      lower_is_better: true
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [1, 25]
+  benchmark_parameters: {}
+  optimization:
+    wallclock_limit_in_s: 86400
+    estimated_cost_limit_in_s: null
+    is_surrogate: false
+
+mo_cnn_fashion:
+  import:
+    import_from: mo.cnn_benchmark
+    benchmark_name: FashionCNNBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: negative_accuracy
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: log_model_size
+      threshold: 8.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: train_accuracy
+      lower_is_better: false
+    - name: training_cost
+      lower_is_better: true
+    - name: valid_accuracy
+      lower_is_better: false
+    - name: valid_cost
+      lower_is_better: true
+    - name: test_accuracy
+      lower_is_better: false
+    - name: test_cost
+      lower_is_better: true
+    - name: total_time
+      lower_is_better: true
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [1, 25]
+  benchmark_parameters: {}
+  optimization:
+    wallclock_limit_in_s: 86400
+    estimated_cost_limit_in_s: null
+    is_surrogate: false
+
+mo_nas_201_cifar10_valid:
+  import:
+    import_from: nas.nasbench_201
+    benchmark_name: Cifar10ValidNasBench201MOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 100
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: model_size
+      threshold: 1.531546
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: num_flops
+      threshold: 220.11969
+      lower_is_better: true
+    - name: latency
+      threshold: 0.025579094886779785
+      lower_is_better: true
+    - name: train_losses
+      lower_is_better: true
+    - name: train_cost
+      lower_is_better: false
+    - name: valid_losses
+      lower_is_better: true
+    - name: valid_cost
+      lower_is_better: false
+    - name: test_losses
+      lower_is_better: true
+    - name: test_cost
+      lower_is_better: true
+    - name: epoch
+      lower_is_better: false
+  fidelity:
+    - name: epoch
+      limits: [12, 200]
+  benchmark_parameters: {}
+  optimization:
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+  plotting:
+    log: true
+
+
+mo_nas_201_cifar100:
+  import:
+    import_from: nas.nasbench_201
+    benchmark_name: Cifar100NasBench201MOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 100
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: model_size
+      threshold: 1.537396
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: num_flops
+      threshold: 220.12554
+      lower_is_better: true
+    - name: latency
+      threshold: 0.02614096800486247
+      lower_is_better: true
+    - name: train_losses
+      lower_is_better: true
+    - name: train_cost
+      lower_is_better: false
+    - name: valid_losses
+      lower_is_better: true
+    - name: valid_cost
+      lower_is_better: false
+    - name: test_losses
+      lower_is_better: true
+    - name: test_cost
+      lower_is_better: true
+    - name: epoch
+      lower_is_better: false
+  fidelity:
+    - name: epoch
+      limits: [12, 200]
+  benchmark_parameters: {}
+  optimization:
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+mo_nas_201_imagenet_valid:
+  import:
+    import_from: nas.nasbench_201
+    benchmark_name: ImageNetNasBench201MOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 100
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: model_size
+      threshold: 1.538696
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: num_flops
+      threshold: 55.03756
+      lower_is_better: true
+    - name: latency
+      threshold: 0.02822377681732178
+      lower_is_better: true
+    - name: train_losses
+      lower_is_better: true
+    - name: train_cost
+      lower_is_better: false
+    - name: valid_losses
+      lower_is_better: true
+    - name: valid_cost
+      lower_is_better: false
+    - name: test_losses
+      lower_is_better: true
+    - name: test_cost
+      lower_is_better: true
+    - name: epoch
+      lower_is_better: false
+  fidelity:
+    - name: epoch
+      limits: [12, 200]
+  benchmark_parameters: {}
+  optimization:
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+
+mo_nas_1shot1_CS_1:
+  import:
+    import_from: nas.nasbench_1shot1
+    benchmark_name: NASBench1shot1SearchSpace1MOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 1
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: trainable_parameters
+      threshold: 10**8
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [4, 108]
+  benchmark_parameters: {}
+  optimization:
+    tae_limit: -1
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+mo_nas_1shot1_CS_2:
+  import:
+    import_from: nas.nasbench_1shot1
+    benchmark_name: NASBench1shot1SearchSpace2MOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 1
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: trainable_parameters
+      threshold: 10**8
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [4, 108]
+  benchmark_parameters: {}
+  optimization:
+    tae_limit: -1
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+mo_nas_1shot1_CS_3:
+  import:
+    import_from: nas.nasbench_1shot1
+    benchmark_name: NASBench1shot1SearchSpace3MOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 1
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: trainable_parameters
+      threshold: 10**8
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [4, 108]
+  benchmark_parameters: {}
+  optimization:
+    tae_limit: -1
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+mo_nas_101_A:
+  import:
+    import_from: nas.nasbench_101
+    benchmark_name: NASCifar10AMOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 1
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: trainable_parameters
+      threshold: 10**8
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [4, 108]
+  benchmark_parameters: {}
+  optimization:
+    tae_limit: 26000
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+
+mo_nas_101_B:
+  import:
+    import_from: nas.nasbench_101
+    benchmark_name: NASCifar10BMOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 1
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: trainable_parameters
+      threshold: 10**8
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [4, 108]
+  benchmark_parameters: {}
+  optimization:
+    tae_limit: 26000
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true
+
+mo_nas_101_C:
+  import:
+    import_from: nas.nasbench_101
+    benchmark_name: NASCifar10CMOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: misclassification_rate
+      threshold: 1
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: trainable_parameters
+      threshold: 10**8
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: budget
+      lower_is_better: false
+  fidelity:
+    - name: budget
+      limits: [4, 108]
+  benchmark_parameters: {}
+  optimization:
+    tae_limit: -1
+    wallclock_limit_in_s: 43200
+    estimated_cost_limit_in_s: 10000000
+    is_surrogate: true

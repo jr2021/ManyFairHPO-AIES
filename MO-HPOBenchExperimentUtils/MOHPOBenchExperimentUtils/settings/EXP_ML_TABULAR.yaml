@@ -1,0 +1,2250 @@
+mo_ml_tab_lr_10101:
+  benchmark_parameters:
+    model: lr
+    task_id: 10101
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_12:
+  benchmark_parameters:
+    model: lr
+    task_id: 12
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 5423.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_146212:
+  benchmark_parameters:
+    model: lr
+    task_id: 146212
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 36457.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_146606:
+  benchmark_parameters:
+    model: lr
+    task_id: 146606
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 19913.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_146818:
+  benchmark_parameters:
+    model: lr
+    task_id: 146818
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_146821:
+  benchmark_parameters:
+    model: lr
+    task_id: 146821
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 563.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_146822:
+  benchmark_parameters:
+    model: lr
+    task_id: 146822
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1178.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_14965:
+  benchmark_parameters:
+    model: lr
+    task_id: 14965
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 12916.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_167119:
+  benchmark_parameters:
+    model: lr
+    task_id: 167119
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 11117.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_167120:
+  benchmark_parameters:
+    model: lr
+    task_id: 167120
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 11315.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_168911:
+  benchmark_parameters:
+    model: lr
+    task_id: 168911
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1226.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_168912:
+  benchmark_parameters:
+    model: lr
+    task_id: 168912
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 986.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_3:
+  benchmark_parameters:
+    model: lr
+    task_id: 3
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 893.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_31:
+  benchmark_parameters:
+    model: lr
+    task_id: 31
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 318.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_3917:
+  benchmark_parameters:
+    model: lr
+    task_id: 3917
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 407.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_53:
+  benchmark_parameters:
+    model: lr
+    task_id: 53
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 278.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_7592:
+  benchmark_parameters:
+    model: lr
+    task_id: 7592
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 20372.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_9952:
+  benchmark_parameters:
+    model: lr
+    task_id: 9952
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 364.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_9977:
+  benchmark_parameters:
+    model: lr
+    task_id: 9977
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 15803.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_lr_9981:
+  benchmark_parameters:
+    model: lr
+    task_id: 9981
+  fidelity:
+  - limits:
+    - 12
+    - 1000
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 10510.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_10101:
+  benchmark_parameters:
+    model: nn
+    task_id: 10101
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 31734.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_146818:
+  benchmark_parameters:
+    model: nn
+    task_id: 146818
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 19659.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_146821:
+  benchmark_parameters:
+    model: nn
+    task_id: 146821
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 51127.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_146822:
+  benchmark_parameters:
+    model: nn
+    task_id: 146822
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 81836.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_168912:
+  benchmark_parameters:
+    model: nn
+    task_id: 168912
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 350000
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_3:
+  benchmark_parameters:
+    model: nn
+    task_id: 3
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 350000
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_31:
+  benchmark_parameters:
+    model: nn
+    task_id: 31
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 32009.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_3917:
+  benchmark_parameters:
+    model: nn
+    task_id: 3917
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 88413.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_53:
+  benchmark_parameters:
+    model: nn
+    task_id: 53
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 29040.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_nn_9952:
+  benchmark_parameters:
+    model: nn
+    task_id: 9952
+  fidelity:
+  - limits:
+    - 3
+    - 243
+    name: iter
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 272342.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_10101:
+  benchmark_parameters:
+    model: rf
+    task_id: 10101
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 500.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_12:
+  benchmark_parameters:
+    model: rf
+    task_id: 12
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 4562.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_146212:
+  benchmark_parameters:
+    model: rf
+    task_id: 146212
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 8064.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_146606:
+  benchmark_parameters:
+    model: rf
+    task_id: 146606
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 116458.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_146818:
+  benchmark_parameters:
+    model: rf
+    task_id: 146818
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 531.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_146821:
+  benchmark_parameters:
+    model: rf
+    task_id: 146821
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 565.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_146822:
+  benchmark_parameters:
+    model: rf
+    task_id: 146822
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1177.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_14965:
+  benchmark_parameters:
+    model: rf
+    task_id: 14965
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 13985.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_167119:
+  benchmark_parameters:
+    model: rf
+    task_id: 167119
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 5485.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_167120:
+  benchmark_parameters:
+    model: rf
+    task_id: 167120
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 93386.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_168911:
+  benchmark_parameters:
+    model: rf
+    task_id: 168911
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1758.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_168912:
+  benchmark_parameters:
+    model: rf
+    task_id: 168912
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 2661.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_3:
+  benchmark_parameters:
+    model: rf
+    task_id: 3
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 813.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_31:
+  benchmark_parameters:
+    model: rf
+    task_id: 31
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 588.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_3917:
+  benchmark_parameters:
+    model: rf
+    task_id: 3917
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 868.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_53:
+  benchmark_parameters:
+    model: rf
+    task_id: 53
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 635.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_7592:
+  benchmark_parameters:
+    model: rf
+    task_id: 7592
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 17516.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_9952:
+  benchmark_parameters:
+    model: rf
+    task_id: 9952
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1776.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_9977:
+  benchmark_parameters:
+    model: rf
+    task_id: 9977
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 28490.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_rf_9981:
+  benchmark_parameters:
+    model: rf
+    task_id: 9981
+  fidelity:
+  - limits:
+    - 18
+    - 512
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 958.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_10101:
+  benchmark_parameters:
+    model: svm
+    task_id: 10101
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_12:
+  benchmark_parameters:
+    model: svm
+    task_id: 12
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 240.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_146212:
+  benchmark_parameters:
+    model: svm
+    task_id: 146212
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 42737.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_146606:
+  benchmark_parameters:
+    model: svm
+    task_id: 146606
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1569619.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_146818:
+  benchmark_parameters:
+    model: svm
+    task_id: 146818
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_146821:
+  benchmark_parameters:
+    model: svm
+    task_id: 146821
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_146822:
+  benchmark_parameters:
+    model: svm
+    task_id: 146822
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 125.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_14965:
+  benchmark_parameters:
+    model: svm
+    task_id: 14965
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 69099.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_167119:
+  benchmark_parameters:
+    model: svm
+    task_id: 167119
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 54530.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_167120:
+  benchmark_parameters:
+    model: svm
+    task_id: 167120
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1062679.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_168911:
+  benchmark_parameters:
+    model: svm
+    task_id: 168911
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 428.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_168912:
+  benchmark_parameters:
+    model: svm
+    task_id: 168912
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 513.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_3:
+  benchmark_parameters:
+    model: svm
+    task_id: 3
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 252.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_31:
+  benchmark_parameters:
+    model: svm
+    task_id: 31
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_3917:
+  benchmark_parameters:
+    model: svm
+    task_id: 3917
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_53:
+  benchmark_parameters:
+    model: svm
+    task_id: 53
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 120.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_7592:
+  benchmark_parameters:
+    model: svm
+    task_id: 7592
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 369874.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_9952:
+  benchmark_parameters:
+    model: svm
+    task_id: 9952
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 403.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_9977:
+  benchmark_parameters:
+    model: svm
+    task_id: 9977
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 254885.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_svm_9981:
+  benchmark_parameters:
+    model: svm
+    task_id: 9981
+  fidelity:
+  - limits:
+    - 0.1111111111111111
+    - 1.0
+    name: subsample
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 180.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_10101:
+  benchmark_parameters:
+    model: xgb
+    task_id: 10101
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 418.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_12:
+  benchmark_parameters:
+    model: xgb
+    task_id: 12
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 50303.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_146212:
+  benchmark_parameters:
+    model: xgb
+    task_id: 146212
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 84168.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_146606:
+  benchmark_parameters:
+    model: xgb
+    task_id: 146606
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 405996.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_146818:
+  benchmark_parameters:
+    model: xgb
+    task_id: 146818
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 729.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_146821:
+  benchmark_parameters:
+    model: xgb
+    task_id: 146821
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 3473.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_146822:
+  benchmark_parameters:
+    model: xgb
+    task_id: 146822
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 7328.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_14965:
+  benchmark_parameters:
+    model: xgb
+    task_id: 14965
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 115099.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_167119:
+  benchmark_parameters:
+    model: xgb
+    task_id: 167119
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 85345.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_167120:
+  benchmark_parameters:
+    model: xgb
+    task_id: 167120
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 320684.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_168911:
+  benchmark_parameters:
+    model: xgb
+    task_id: 168911
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 18752.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_168912:
+  benchmark_parameters:
+    model: xgb
+    task_id: 168912
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 4883.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_3:
+  benchmark_parameters:
+    model: xgb
+    task_id: 3
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 5303.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_31:
+  benchmark_parameters:
+    model: xgb
+    task_id: 31
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1598.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_3917:
+  benchmark_parameters:
+    model: xgb
+    task_id: 3917
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 2159.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_53:
+  benchmark_parameters:
+    model: xgb
+    task_id: 53
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 1869.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_7592:
+  benchmark_parameters:
+    model: xgb
+    task_id: 7592
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 269340.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_9952:
+  benchmark_parameters:
+    model: xgb
+    task_id: 9952
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 3588.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_9977:
+  benchmark_parameters:
+    model: xgb
+    task_id: 9977
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 183106.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200
+mo_ml_tab_xgb_9981:
+  benchmark_parameters:
+    model: xgb
+    task_id: 9981
+  fidelity:
+  - limits:
+    - 74
+    - 2000
+    name: n_estimators
+  import:
+    benchmark_name: TabularMOBenchmark
+    import_from: ml.tabular_benchmark
+    use_local: false
+  metrics:
+    target:
+    - lower_is_better: true
+      name: loss
+      threshold: 1.0
+    - lower_is_better: true
+      name: inference_cost
+      threshold: 1e6
+  optimization:
+    estimated_cost_limit_in_s: 113329.0
+    is_surrogate: true
+    wallclock_limit_in_s: 43200

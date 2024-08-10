@@ -1,0 +1,211 @@
+yahpo_surrogate_iaml:
+  # A lot of yahpo surrogates share the same configuration. To simplify things, we use the same
+  # config for all.
+  available_optimizers_datasets:
+    iaml_ranger:  ['1067', '1489', '40981', '41146']
+    iaml_rpart:   ['1067', '1489', '40981', '41146']
+    iaml_glmnet:  ['1067', '1489', '40981', '41146']
+    iaml_xgboost: ['1067', '1489', '40981', '41146']
+    iaml_super:   ['1067', '1489', '40981', '41146']
+
+  import:
+    import_from: surrogates.yahpo_gym
+    benchmark_name: YAHPOGymMOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: mmce
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: nf
+      threshold: 8.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: f1
+      lower_is_better: false
+    - name: auc
+      lower_is_better: false
+    - name: logloss
+      lower_is_better: true
+    - name: ramtrain
+      lower_is_better: true
+    - name: rammodel
+      lower_is_better: true
+    - name: rampredict
+      lower_is_better: true
+    - name: timetrain
+      lower_is_better: true
+    - name: timepredict
+      lower_is_better: true
+      # Main Effect Complexity of Features
+    - name: mec
+      lower_is_better: false
+      # Interaction Strength of Features
+    - name: ias
+      lower_is_better: false
+    - name: trainsize
+      lower_is_better: false
+  fidelity:
+    - name: trainsize
+      limits: [0.03, 1.0]
+  # Replace them with the correct setttings
+  benchmark_parameters:
+    scenario: null
+    instance: null
+    multi_thread: False
+  optimization:
+    tae_limit: 150000
+
+    # Keep a total wallclocktime limit
+    wallclock_limit_in_s: 43200
+    # 4 days
+    estimated_cost_limit_in_s: 345600
+    is_surrogate: true
+
+yahpo_surrogate_fair:
+  # A lot of yahpo surrogates share the same configuration. To simplify things, we use the same
+  # config for all.
+  fair_mapping_opt_taskid_target:
+    - ['fair_fgrrm', '7592', ['mmce', 'feo']]
+    - ['fair_fgrrm', '14965', ['mmce', 'feo']]
+    - ['fair_rpart', '317599', ['mmce', 'ffomr']]
+    - ['fair_rpart', '7592', ['mmce', 'feo']]
+    - ['fair_ranger', '317599', ['mmce', 'fpredp']]
+    - ['fair_ranger', '14965', ['mmce', 'fpredp']]
+    - ['fair_xgboost', '317599', ['mmce', 'ffomr']]
+    - ['fair_xgboost', '7592', ['mmce', 'ffnr']]
+    - ['fair_super', '14965', ['mmce', 'feo']]
+    - ['fair_super', '317599', ['mmce', 'ffnr']]
+
+  import:
+    import_from: surrogates.yahpo_gym
+    benchmark_name: YAHPOGymMOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: mmce
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: VARIABLE
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: f1
+      lower_is_better: false
+    - name: facc
+      lower_is_better: false
+    - name: feo
+      lower_is_better: false
+    - name: ffnr
+      lower_is_better: false
+    - name: ffomr
+      lower_is_better: false
+    - name: fpredp
+      lower_is_better: false
+    - name: ftpr
+      lower_is_better: false
+    - name: rammodel
+      lower_is_better: false
+    - name: timetrain
+      lower_is_better: true
+    - name: trainsize
+      lower_is_better: false
+  fidelity:
+    - name: trainsize
+      limits: [0.111111111111111, 1.0]
+  # Replace them with the correct setttings
+  benchmark_parameters:
+    scenario: null
+    instance: null
+    multi_thread: False
+  optimization:
+    tae_limit: 150000
+    # Keep a total wallclocktime limit
+    wallclock_limit_in_s: 43200
+    # 4 days
+    estimated_cost_limit_in_s: 345600
+    is_surrogate: true
+
+
+
+yahpo_surrogate_fair_cont_only:
+  # A lot of yahpo surrogates share the same configuration. To simplify things, we use the same
+  # config for all.
+  fair_mapping_opt_taskid_target:
+    - ['fair_fgrrm', '7592', ['mmce', 'feo']]
+    - ['fair_fgrrm', '14965', ['mmce', 'feo']]
+    - ['fair_rpart', '317599', ['mmce', 'ffomr']]
+    - ['fair_rpart', '7592', ['mmce', 'feo']]
+    - ['fair_ranger', '317599', ['mmce', 'fpredp']]
+    - ['fair_ranger', '14965', ['mmce', 'fpredp']]
+    - ['fair_xgboost', '317599', ['mmce', 'ffomr']]
+    - ['fair_xgboost', '7592', ['mmce', 'ffnr']]
+    - ['fair_super', '14965', ['mmce', 'feo']]
+    - ['fair_super', '317599', ['mmce', 'ffnr']]
+
+  import:
+    import_from: surrogates.yahpo_gym
+    benchmark_name: YAHPOGymMOBenchmark
+    use_local: false
+  metrics:
+    target:
+    - name: mmce
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    - name: VARIABLE
+      threshold: 1.0
+      lower_is_better: true
+      normalize:
+        algorithm: NoOPScaler
+    additional:
+    - name: f1
+      lower_is_better: false
+    - name: facc
+      lower_is_better: false
+    - name: feo
+      lower_is_better: false
+    - name: ffnr
+      lower_is_better: false
+    - name: ffomr
+      lower_is_better: false
+    - name: fpredp
+      lower_is_better: false
+    - name: ftpr
+      lower_is_better: false
+    - name: rammodel
+      lower_is_better: false
+    - name: timetrain
+      lower_is_better: true
+    - name: trainsize
+      lower_is_better: false
+  fidelity:
+    - name: trainsize
+      limits: [0.111111111111111, 1.0]
+  # Replace them with the correct setttings
+  benchmark_parameters:
+    scenario: null
+    instance: null
+    multi_thread: False
+  optimization:
+    tae_limit: 150000
+
+    # Keep a total wallclocktime limit
+    wallclock_limit_in_s: 43200
+    # 4 days
+    estimated_cost_limit_in_s: 345600
+    is_surrogate: true
+
+  configspace_modification:
+    yahpo_surrogate_fair_cont_only_fair_fgrrm_7592:
+      hps_to_replace_with_constant:
+        definition: sp-komiyama
